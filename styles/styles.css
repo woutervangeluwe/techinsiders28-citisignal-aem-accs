@@ -500,11 +500,12 @@ main[hidden] {
   display: none !important;
 }
 
-.panel-wrapper[data-layout="row"] {
-  display: flex !important;
-  flex-direction: row !important;
+/* 2-column layout for EDS Adaptive Forms */
+form.cmp-adaptiveform-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
 }
-.panel-wrapper[data-layout="row"] > .field-wrapper {
-  flex: 1;
+form.cmp-adaptiveform-container > .field-wrapper:last-child {
+  grid-column: 1 / -1;
 }
