@@ -501,13 +501,11 @@ main[hidden] {
 }
 
 /* 2-column layout for EDS Adaptive Forms */
-div[data-block-name="form"] form,
-.embed-adaptive-form form {
+.embed-adaptive-form .form.block form {
   grid-template-columns: 1fr 1fr !important;
   gap: 1rem !important;
 }
 
-div[data-block-name="form"] form > .button-wrapper,
-.embed-adaptive-form form > .button-wrapper {
+.embed-adaptive-form .form.block form > .button-wrapper {
   grid-column: 1 / -1 !important;
 }
