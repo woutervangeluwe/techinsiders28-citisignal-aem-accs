@@ -500,9 +500,14 @@ main[hidden] {
   display: none !important;
 }
 
+/* 2-column layout for EDS Adaptive Forms */
 div[data-block-name="form"] form[data-source="aem"] {
   grid-template-columns: 1fr 1fr !important;
   gap: 1rem !important;
+}
+
+div[data-block-name="form"] form[data-source="aem"] > .field-wrapper {
+  grid-column: span 1 !important;
 }
 
 div[data-block-name="form"] form[data-source="aem"] > .button-wrapper {
