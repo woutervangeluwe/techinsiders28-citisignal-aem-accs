@@ -506,7 +506,6 @@ main[hidden] {
   grid-template-columns: 1fr 1fr !important;
   gap: 1rem;
 }
-
 .embed-adaptive-form form > .button-wrapper {
   grid-column: 1 / -1;
 }
